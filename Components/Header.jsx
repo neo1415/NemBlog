@@ -3,7 +3,6 @@ import {getCategories} from '../services'
 import Link from 'next/link'
 import Image from 'next/image'
 import { assets } from '../Constants'
-import { BsTwitter, BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 
 const Header = () => {
 
