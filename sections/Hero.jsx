@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { getheroPosts } from '../services';
+import { getheroPosts } from '../Services';
 import { HeroCard } from '../Components';
 
 

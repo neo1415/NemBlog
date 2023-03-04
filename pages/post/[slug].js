@@ -1,5 +1,5 @@
 import React from 'react'
-import {getPosts, getPostDetails} from '../../services'
+import {getPosts, getPostDetails} from '../../Services'
 import {useRouter} from 'next/router'
 import {PostDetail, Categories, PostWidget, Author, Comments, CommentsForm,Loader} from '../../Components'
 

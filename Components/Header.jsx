@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react'
-import {getCategories} from '../services'
+import {getCategories} from '../Services'
 import Link from 'next/link'
 import Image from 'next/image'
 import { assets } from '../Constants'
