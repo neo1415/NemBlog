@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { getheroPosts } from '../services';
-import { HeroCard } from '../components';
+import { HeroCard } from '../Components';
 
 
 const responsive = {
