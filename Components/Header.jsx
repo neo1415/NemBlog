@@ -15,7 +15,7 @@ const Header = () => {
     } , [])
 
   return (
-    <div className='container mx-0 px-10 mb-0 bg-white nav'>
+    <div className='container mx-0 px-10 mb-0  bg-white nav'>
         <div className='border-b w-full inline-block border-red-800 py-8'>
             <div className='md:float-left block'>
                 <Link href='/'>

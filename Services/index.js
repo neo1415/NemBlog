@@ -273,6 +273,7 @@ export const getheroPosts = async () => {
         }
         title
         slug
+        excerpt
         createdAt
       }
     }   
