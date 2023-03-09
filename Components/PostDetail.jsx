@@ -1,5 +1,6 @@
 import React from 'react'
 import moment from 'moment/moment'
+import { Hero } from '../sections';
 
 const PostDetail = ({post}) => {
 
@@ -43,12 +44,12 @@ const PostDetail = ({post}) => {
   };
 
   return (
-    <div className='bg-white shadow-lg rounded-lg lg:p-4 pb-12 mb-8'>
-        <div className='relative overflow-hidden shadow-md mb-6'>
+    <div className=' detail bg-white shadow-lg rounded-lg lg:p-4 pb-12 mb-8'>
+        <div className='relative w-full overflow-hidden shadow-md mb-6'>
           <img
           src={post.featuredImage.url}
           alt={post.title}
-          className='object-top h-full rounded-t-lg'
+          className='detail-img w-full object-cover h-full rounded-t-lg'
           />
           <div className='px-4 lg:px-0'>
             <div className='flex items-center mb-8 w-full'>

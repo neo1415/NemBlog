@@ -20,19 +20,18 @@ const PostWidget = ({categories, slug}) => {
     console.log(relatedPosts)
 
   return (
-    <div className='bg-white shadow-lg rounded-lg p-8 mb-8'>
+    <div className='bg-white rounded-lg p-8 mt-20 mb-8'>
         <h3 className='text-xl mb-8 font-semibold border-b pb-4'>
             {slug ? 'Similar Posts' : 'Recent Posts'}
         </h3>
         {relatedPosts.map((post)=>(
-            <div className='flex items-center w-full mb-4' key={post.title}>
-                <div className='w-16 flex-none'>
-                    <img
-                    alt={post.title}
-                    height='60px'
-                    width='60px'
-                    className='align-middle rounded-full'
-                    src={post.featuredImage.url} />
+            <div className='bg-white shadow-lg rounded-lg lg:p-4 pb-12 mb-8' key={post.title}>
+                <div className='w-100 flex-none'>
+                <img
+                src={post.featuredImage.url}
+                alt={post.title}
+                className='w-full object-top mb-4 h-20 object-cover rounded-t-lg'
+                />
                 </div>
                 <div className='flex-grow ml-4'>
                     <p className='text-gray-500 font-xs'>

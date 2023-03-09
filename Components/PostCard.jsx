@@ -1,10 +1,14 @@
 import React from 'react'
 import moment from 'moment/moment'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 const PostCard = ({post}) => {
   return (
-    <div className='bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8'>
+    <motion.div
+    whileInView={{y: [100, 0], opacity: [0, 1]}}
+    transition= {{ duration:1.2, ease:'easeOut' }} 
+    className='bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8'>
         <div className='relative overflow-hidden shadow-md pb-80 mb-6'>
             <img src={post.featuredImage.url}
                  className='absolute w-full h-80 object-cover object-top shadow-lg rounded-t-lg lg:rounded-lg' 
@@ -16,6 +20,9 @@ const PostCard = ({post}) => {
                 {post.title}
             </Link>
         </h1>
+        <p className='text-center text-lg text-gray-700 font-normal px-4 lg:px-20 mb-8'>
+        {post.excerpt}
+    </p>
         <div className='block lg:flex text-center items-center justify-center mb-8 w-full'>
             <div className='flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8'>
                 <img
@@ -36,9 +43,7 @@ const PostCard = ({post}) => {
         </div>
     </div>
 
-    <p className='text-center text-lg text-gray-700 font-normal px-4 lg:px-20 mb-8'>
-        {post.excerpt}
-    </p>
+
 
     <div className='text-center'>
         <Link href={`/post/${post.slug}`}>
@@ -46,7 +51,7 @@ const PostCard = ({post}) => {
         </Link>
     </div>
 
-    </div>
+    </motion.div>
   )
 }
 

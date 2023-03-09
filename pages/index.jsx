@@ -22,7 +22,7 @@ export default function Home ({posts}) {
             <a href='https://www.linkedin.com/company/nem-insurance-plc/'><BsLinkedin /></a>  
           </button>
         </div> */}
-      <div className="container mx-auto px-10 mb-8">
+      <div className="container von mx-auto px-1 mb-8">
 
         <div className="-mt-12">
         <FeaturedPosts />

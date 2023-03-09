@@ -22,7 +22,7 @@ body {
     left: 0;
     top: 0;
     z-index: -1;
-    // background-position: 50% 50%;
+    background-position: 25% 23% 25% 23%;
     // background-repeat: no-repeat;
     // background-size: cover;
   }
@@ -75,9 +75,16 @@ a {
   margin: 0 !important;
   padding: 0 !important;
   max-width:100% !important;
+
 }
 .nav{
-  max-width:100% !important;
+  max-width: 100% !important;
+  margin-bottom: 3rem !important;
+  top: 0!important;
+  z-index: 40;
+  position: absolute;
+  background: #0000007a;
+  margin-bottom: 4rem !important;
 }
 .bt2{
   background: rgb(162,27,7);
@@ -175,4 +182,17 @@ a {
 @media screen and (max-width:700px) {
   display: none;
 }
+}
+
+.detail{
+  margin-top: 100px;
+  // padding-left: 0rem !important;
+  // padding-right: 0rem !important;
+  // margin-left: 0rem !important;
+  // margin-right: 0rem !important;
+
+}
+.detail-img{
+  max-width: 100%;
+  width: 100%;
 }
