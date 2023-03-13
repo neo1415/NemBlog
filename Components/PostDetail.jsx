@@ -25,7 +25,7 @@ const PostDetail = ({post}) => {
       case 'heading-three':
         return <h3 key={index} className="text-xl font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
       case 'paragraph':
-        return <p key={index} className="mb-8">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
+        return <p key={index} className="mb-8 text-3md">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
       case 'heading-four':
         return <h4 key={index} className="text-md font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
       case 'image':
@@ -51,9 +51,9 @@ const PostDetail = ({post}) => {
           alt={post.title}
           className='detail-img w-full object-cover h-full rounded-t-lg'
           />
-          <div className='px-4 lg:px-0'>
+          <div className='px-4 lg:px-52'>
             <div className='flex items-center mb-8 w-full'>
-            <div className='flex items-center mt-4 mb-4 lg:mb-0 w-full lg:w-auto mr-8'>
+            <div className='flex items-center mt-0 mb-4 lg:mb-0 w-full lg:w-auto mr-8'>
                 <img
                 alt={post.author.name}
                 height='40px'

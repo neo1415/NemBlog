@@ -7,7 +7,7 @@ import Script from 'next/script'
 function MyApp({ Component, pageProps }) {
   return(
     <Layout>
-      {/* <Script id='tidio chatbot' src="//code.tidio.co/zh11bdxycruhcii45swxg9gs8j1ij404.js" async /> */}
+      <Script id='tidio chatbot' src="//code.tidio.co/zh11bdxycruhcii45swxg9gs8j1ij404.js" async />
       <Component {...pageProps} />
     </Layout>
   ) 
