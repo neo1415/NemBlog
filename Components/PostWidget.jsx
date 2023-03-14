@@ -25,12 +25,12 @@ const PostWidget = ({categories, slug}) => {
             {slug ? 'Similar Posts' : 'Recent Posts'}
         </h3>
         {relatedPosts.map((post)=>(
-            <div className='bg-white shadow-lg rounded-lg lg:p-4 pb-12 mb-8' key={post.title}>
-                <div className='w-100 flex-none'>
+            <div className='bg-white lg:flex shadow-lg rounded-lg lg:p-4 pb-12 mb-8' key={post.title}>
+                <div className='w-100'>
                 <img
                 src={post.featuredImage.url}
                 alt={post.title}
-                className='w-full object-top mb-4 h-20 object-cover rounded-t-lg'
+                className='w-full object-top  mb-4 h-20 object-cover rounded-t-lg'
                 />
                 </div>
                 <div className='flex-grow ml-4'>
