@@ -49,7 +49,7 @@ const PostDetail = ({post}) => {
               autoPlay
               controls
               type='video/mp4'
-              className='mx-auto'
+              className="mx-auto"
             />
           );
       default:
