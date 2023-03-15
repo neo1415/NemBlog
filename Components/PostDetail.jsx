@@ -43,8 +43,8 @@ const PostDetail = ({post}) => {
             <video
               key={index}
               alt={obj.title}
-              height='30vh'
-              width='300px'
+              height={obj.height}
+              width={obj.width}
               src={obj.src}
               autoPlay
               controls
