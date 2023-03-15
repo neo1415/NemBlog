@@ -38,6 +38,20 @@ const PostDetail = ({post}) => {
             src={obj.src}
           />
         );
+        case 'video':
+          return (
+            <video
+              key={index}
+              alt={obj.title}
+              height='30vh'
+              width='300px'
+              src={obj.src}
+              autoPlay
+              controls
+              type='video/mp4'
+              className='mx-auto'
+            />
+          );
       default:
         return modifiedText;
     }
