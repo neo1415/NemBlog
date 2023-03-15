@@ -37,8 +37,8 @@ const Hero = ({post}) => {
     // </div>
     <section class="bg-white sticky "  style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgb(0, 0, 0)), url('${post.featuredImage.url}')`   /* The least supported option. */}}>
     <div class="py-8 px-4 top-0 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-1">
-    <div className='border-yellow-300 border-t lg:mt-1 mt-10'>
-        <a href="#" class="inline-flex justify-between lg:mt-20 mt-10 items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-yellow-300 dark:text-black hover:bg-gray-200 dark:hover:bg-transparent hover:text-yellow-300" role="alert">
+    <div className='border-yellow-300 lg:border-yellow-300 border-t lg:mt-1 mt-10'>
+        <a href="#" class="inline-flex justify-between lg:mt-20 mt-10 items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-yellow-300 rounded-full dark:bg-yellow-300 dark:text-black hover:bg-gray-200 dark:hover:bg-transparen" role="alert">
             <span class="text-xs bg-primary-600 rounded-full text-black px-4 py-1.5 mr-3 ">New</span> <span class="text-sm font-medium">Stay up to date with the latest posts</span> 
             <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
         </a>
@@ -54,7 +54,7 @@ const Hero = ({post}) => {
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl dark:text-white">{post.title}</h1>
         <p class="mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48 dark:text-white">{post.excerpt}</p>
         <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-            <Link href={`/post/${post.slug}`} class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-yellow-300 dark:hover:bg-yellow-600 dark:focus:ring-gray-800">
+            <Link href={`/post/${post.slug}`} class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-yellow-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-black dark:border-yellow-300 dark:hover:bg-yellow-600 dark:focus:ring-gray-800">
                 <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
                 Read More
             </Link>  
