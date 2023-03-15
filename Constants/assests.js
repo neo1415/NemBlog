@@ -3,5 +3,5 @@ import Hero from '../Assets/hero.jpg'
 
 export default {
     Logo,
-    Hero
+    Hero,
 }
