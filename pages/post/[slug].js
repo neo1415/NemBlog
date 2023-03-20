@@ -50,6 +50,6 @@ export async function getStaticProps({ params }) {
 
     return{
         paths: post.map(({node:{slug}}) => ({params: {slug}})),
-        fallback: false
+        fallback: true
     }
   }
