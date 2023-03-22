@@ -65,6 +65,7 @@ const PostDetail = ({post}) => {
   return (
     <div className=' detail bg-white shadow-lg rounded-lg lg:p-4 pb-12 mb-8'>
         <div className='relative w-full overflow-hidden shadow-md mb-6'>
+        <h1 className='mt-20 mb-8 text-[2rem] mx-auto font-[800-]'>{post.title}</h1>
           <img
           src={post.featuredImage.url}
           alt={post.title}
@@ -90,7 +91,7 @@ const PostDetail = ({post}) => {
         <span className='align-middle'>{moment(post.createdAt).format('MM DD, YYYY')}</span>
         </div>
             </div>
-            <h1 className='mb-8 text-3xl font-semibold'>{post.title}</h1>
+           
             {post.content.raw.children.map((typeObj,index)=>{
               const children = typeObj.children.map((item,itemIndex)=>(getContentFragment(itemIndex,item.text,item)))
                 return getContentFragment(index,children,typeObj,typeObj.type)

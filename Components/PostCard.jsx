@@ -2,6 +2,7 @@ import React from 'react'
 import moment from 'moment/moment'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { grpahCMSImageLoader } from './../util';
 
 const PostCard = ({post}) => {
   return (
@@ -15,7 +16,7 @@ const PostCard = ({post}) => {
                 alt={post.title}/>
         </div>
         <h1 className='transition duration-700 text-center mb-9 cursor-pointer
-        hover:text-pink-600 text-3xl font-semibold'>
+        hover:text-red-600 text-3xl font-semibold'>
             <Link href={`/post/${post.slug}`}>
                 {post.title}
             </Link>
@@ -29,6 +30,7 @@ const PostCard = ({post}) => {
                 alt={post.author.name}
                 height='40px'
                 width='40px'
+                loader={grpahCMSImageLoader}
                 className='align-middle rounded-full'
                 src={post.author.photo.url} />
                 <p className='inline align-middle text-gray-700 ml-2 text-lg'>{post.author.name}</p>
