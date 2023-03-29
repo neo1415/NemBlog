@@ -35,8 +35,8 @@ const Hero = ({post}) => {
     //     </div>
     //   </div>
     // </div>
-    <section class="bg-white sticky "  style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgb(0, 0, 0)), url('${post.featuredImage.url}')`   /* The least supported option. */}}>
-    <div class="py-8 px-4 top-0 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-1">
+    <section className="bg-white sticky object-cover "  style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgb(0, 0, 0)), url('${post.featuredImage.url}')`   /* The least supported option. */, backgroundSize:'cover', backgroundRepeat:'no-repeat'}}>
+    <div className="py-8 px-4 top-0 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-1">
     <div className='border-yellow-300 lg:border-yellow-300 border-t lg:mt-1 mt-10'>
         <a href="#" class="inline-flex justify-between lg:mt-20 mt-10 items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-yellow-300 rounded-full dark:bg-yellow-300 dark:text-black hover:bg-gray-200 dark:hover:bg-transparen" role="alert">
             <span class="text-xs bg-primary-600 rounded-full text-black px-4 py-1.5 mr-3 ">New</span> <span class="text-sm font-medium">Stay up to date with the latest posts</span> 
