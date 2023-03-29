@@ -1,8 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@variants responsive {
+  .masonry {
+      column-gap: 1.5em;
+      column-count: 1;
+  }
+  .masonry-sm {
+      column-gap: 1.5em;
+      column-count: 2;
+  }
+  .masonry-md {
+      column-gap: 1.5em;
+      column-count: 3;
+  }
+  .break-inside {
+      break-inside: avoid;
+  }
+
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400;1,500;1,900&display=swap');
 
 html,
 body {
@@ -199,7 +219,13 @@ a {
   height: 60vh;
 }
 .text-3md{
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: 400;
   line-height: 1.6;
+  font-family: Roboto;
+}
+.head{
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
